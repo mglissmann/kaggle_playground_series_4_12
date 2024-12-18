@@ -1,0 +1,4 @@
+## The .gitignore file specifies things that git should ignore. 
+
+## DATA
+.csv
