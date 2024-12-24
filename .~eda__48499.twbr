@@ -1,0 +1,3274 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='train_sampled' inline='true' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='train_sampled' name='textscan.0s4es6h1xnvt071c1pxnd0vnbpqj'>
+            <connection class='textscan' directory='/Users/Mark1/Documents/Data Science/Kaggle/playground_series/4_12/data' filename='train_sampled.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0s4es6h1xnvt071c1pxnd0vnbpqj' name='train_sampled.csv' table='[train_sampled#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='real' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='real' name='Annual Income' ordinal='3' />
+            <column datatype='string' name='Marital Status' ordinal='4' />
+            <column datatype='real' name='Number of Dependents' ordinal='5' />
+            <column datatype='string' name='Education Level' ordinal='6' />
+            <column datatype='string' name='Occupation' ordinal='7' />
+            <column datatype='real' name='Health Score' ordinal='8' />
+            <column datatype='string' name='Location' ordinal='9' />
+            <column datatype='string' name='Policy Type' ordinal='10' />
+            <column datatype='real' name='Previous Claims' ordinal='11' />
+            <column datatype='real' name='Vehicle Age' ordinal='12' />
+            <column datatype='real' name='Credit Score' ordinal='13' />
+            <column datatype='real' name='Insurance Duration' ordinal='14' />
+            <column datatype='datetime' name='Policy Start Date' ordinal='15' />
+            <column datatype='string' name='Customer Feedback' ordinal='16' />
+            <column datatype='string' name='Smoking Status' ordinal='17' />
+            <column datatype='string' name='Exercise Frequency' ordinal='18' />
+            <column datatype='string' name='Property Type' ordinal='19' />
+            <column datatype='real' name='Premium Amount' ordinal='20' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Income]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Annual Income</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Dependents</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of Dependents]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Number of Dependents</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education Level]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Education Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Health Score]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Health Score</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Policy Type]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Policy Type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Previous Claims</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Previous Claims]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Previous Claims</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vehicle Age]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Vehicle Age</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Credit Score]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Credit Score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurance Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Insurance Duration]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Insurance Duration</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy Start Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Policy Start Date]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Policy Start Date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Feedback</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Feedback]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Customer Feedback</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoking Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Smoking Status]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Smoking Status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exercise Frequency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exercise Frequency]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Exercise Frequency</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Property Type]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Property Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Premium Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Premium Amount]</local-name>
+            <parent-name>[train_sampled.csv]</parent-name>
+            <remote-alias>Premium Amount</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='25' />
+      </column>
+      <column datatype='real' name='[Age]' role='measure' type='quantitative' />
+      <column caption='SQRT Premium Amount' datatype='real' name='[Calculation_1382675482346729491]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SQRT([Premium Amount])' />
+      </column>
+      <column caption='Numerical Dimension' datatype='real' name='[Calculation_3412813752600420352]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [Parameters].[Credit Score Parameter] = &apos;Age&apos; then [Age]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Annual Income&apos; then [Annual Income]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Credit Score&apos; then [Credit Score]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Health Score&apos; then [Health Score]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Insurance Duration&apos; then [Insurance Duration]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Number of Dependents&apos; then [Number of Dependents]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Premium Amount&apos; then [Premium Amount]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Previous Claims&apos; then [Previous Claims]&#10;ELSEIF [Parameters].[Credit Score Parameter] = &apos;Vehicle Age&apos; then [Vehicle Age]&#10;end' />
+      </column>
+      <column caption='SQRT Vehicle Age' datatype='real' name='[Calculation_3412813752609398786]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SQRT([Vehicle Age])' />
+      </column>
+      <column datatype='string' name='[Customer Feedback]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Education Level]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Exercise Frequency]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+      <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+      </column>
+      <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='SQRT Premium Amount (bin)' datatype='integer' name='[SQRT Premium Amount (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Calculation_1382675482346729491]' peg='0' size='10' />
+      </column>
+      <column caption='train_sampled.csv' datatype='table' name='[__tableau_internal_object_id__].[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Customer Feedback]' derivation='None' name='[none:Customer Feedback:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Education Level]' derivation='None' name='[none:Education Level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Exercise Frequency]' derivation='None' name='[none:Exercise Frequency:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/gg/ydyvqhls1lzggjy_z1wmnm0m0000gp/T/tableau-temp/#TableauTemp_0zzlbvl180jt4h16lag1z1kajmq0.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/19/2024 03:36:13 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Annual Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual Income</remote-alias>
+              <ordinal>3</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51215</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital Status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Dependents</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Number of Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Dependents</remote-alias>
+              <ordinal>5</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education Level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Occupation</remote-alias>
+              <ordinal>7</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Health Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health Score</remote-alias>
+              <ordinal>8</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>170651</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>9</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Policy Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy Type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Previous Claims</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Previous Claims]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Previous Claims</remote-alias>
+              <ordinal>11</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vehicle Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Age</remote-alias>
+              <ordinal>12</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Credit Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Credit Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Credit Score</remote-alias>
+              <ordinal>13</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1849</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Insurance Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Insurance Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Insurance Duration</remote-alias>
+              <ordinal>14</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy Start Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Policy Start Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy Start Date</remote-alias>
+              <ordinal>15</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>128363</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Feedback</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Feedback]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Feedback</remote-alias>
+              <ordinal>16</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Smoking Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Smoking Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Smoking Status</remote-alias>
+              <ordinal>17</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exercise Frequency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exercise Frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exercise Frequency</remote-alias>
+              <ordinal>18</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Property Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Premium Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Premium Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Premium Amount</remote-alias>
+              <ordinal>20</ordinal>
+              <family>train_sampled.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11831</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Customer Feedback:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Poor&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Good&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Average&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Education Level:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bachelor&apos;s&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;PhD&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Master&apos;s&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;High School&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Exercise Frequency:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Daily&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Weekly&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rarely&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Monthly&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Marital Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Single&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Married&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Divorced&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Occupation:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Unemployed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Self-Employed&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Employed&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Age (bin):ok]' palette='tableau10_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Age (bin):ok]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>2</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>1</bucket>
+            </map-pri>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='id' />
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Annual Income' />
+        <field-sort-custom-order field='Calculation_3412813752600420352' />
+        <field-sort-custom-order field='Marital Status' />
+        <field-sort-custom-order field='Number of Dependents' />
+        <field-sort-custom-order field='Education Level' />
+        <field-sort-custom-order field='Occupation' />
+        <field-sort-custom-order field='Health Score' />
+        <field-sort-custom-order field='Location' />
+        <field-sort-custom-order field='Policy Type' />
+        <field-sort-custom-order field='Previous Claims' />
+        <field-sort-custom-order field='Vehicle Age' />
+        <field-sort-custom-order field='Calculation_3412813752609398786' />
+        <field-sort-custom-order field='Credit Score' />
+        <field-sort-custom-order field='Insurance Duration' />
+        <field-sort-custom-order field='Policy Start Date' />
+        <field-sort-custom-order field='Customer Feedback' />
+        <field-sort-custom-order field='Smoking Status' />
+        <field-sort-custom-order field='Exercise Frequency' />
+        <field-sort-custom-order field='Property Type' />
+        <field-sort-custom-order field='Premium Amount' />
+        <field-sort-custom-order field='Calculation_1382675482346729491' />
+        <field-sort-custom-order field='Calculation_1382675482346242066' />
+        <field-sort-custom-order field='Calculation_1382675482343469073' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Premium Amount (bin)' />
+        <field-sort-custom-order field='Age (bin)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Numerical Dimension' datatype='string' name='[Credit Score Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Vehicle Age&quot;'>
+          <calculation class='tableau' formula='&quot;Vehicle Age&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='train_sampled.csv' id='train_sampled.csv_0FE09A62E31542F3B5E97B6C4928F505'>
+            <properties context=''>
+              <relation connection='textscan.0s4es6h1xnvt071c1pxnd0vnbpqj' name='train_sampled.csv' table='[train_sampled#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='real' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='real' name='Annual Income' ordinal='3' />
+                  <column datatype='string' name='Marital Status' ordinal='4' />
+                  <column datatype='real' name='Number of Dependents' ordinal='5' />
+                  <column datatype='string' name='Education Level' ordinal='6' />
+                  <column datatype='string' name='Occupation' ordinal='7' />
+                  <column datatype='real' name='Health Score' ordinal='8' />
+                  <column datatype='string' name='Location' ordinal='9' />
+                  <column datatype='string' name='Policy Type' ordinal='10' />
+                  <column datatype='real' name='Previous Claims' ordinal='11' />
+                  <column datatype='real' name='Vehicle Age' ordinal='12' />
+                  <column datatype='real' name='Credit Score' ordinal='13' />
+                  <column datatype='real' name='Insurance Duration' ordinal='14' />
+                  <column datatype='datetime' name='Policy Start Date' ordinal='15' />
+                  <column datatype='string' name='Customer Feedback' ordinal='16' />
+                  <column datatype='string' name='Smoking Status' ordinal='17' />
+                  <column datatype='string' name='Exercise Frequency' ordinal='18' />
+                  <column datatype='string' name='Property Type' ordinal='19' />
+                  <column datatype='real' name='Premium Amount' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Numerical Dimension' datatype='string' name='[Credit Score Parameter]' param-domain-type='list' role='measure' type='nominal' value='&quot;Vehicle Age&quot;'>
+        <calculation class='tableau' formula='&quot;Vehicle Age&quot;' />
+        <members>
+          <member value='&quot;Age&quot;' />
+          <member value='&quot;Annual Income&quot;' />
+          <member value='&quot;Credit Score&quot;' />
+          <member value='&quot;Health Score&quot;' />
+          <member value='&quot;Insurance Duration&quot;' />
+          <member value='&quot;Number of Dependents&quot;' />
+          <member value='&quot;Previous Claims&quot;' />
+          <member value='&quot;Vehicle Age&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='actual_v_preds' inline='true' name='federated.0mw7mwz0l767mj1196zsp1lg848u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='actual_v_preds' name='textscan.19tbmvb0kphw6c19pic3t16ee3y2'>
+            <connection class='textscan' directory='/Users/Mark1/Documents/Data Science/Kaggle/playground_series/4_12/data' filename='actual_v_preds.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.19tbmvb0kphw6c19pic3t16ee3y2' name='actual_v_preds.csv' table='[actual_v_preds#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='real' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='real' name='Annual Income' ordinal='3' />
+            <column datatype='string' name='Marital Status' ordinal='4' />
+            <column datatype='real' name='Number of Dependents' ordinal='5' />
+            <column datatype='string' name='Education Level' ordinal='6' />
+            <column datatype='string' name='Occupation' ordinal='7' />
+            <column datatype='real' name='Health Score' ordinal='8' />
+            <column datatype='string' name='Location' ordinal='9' />
+            <column datatype='string' name='Policy Type' ordinal='10' />
+            <column datatype='real' name='Previous Claims' ordinal='11' />
+            <column datatype='real' name='Vehicle Age' ordinal='12' />
+            <column datatype='real' name='Credit Score' ordinal='13' />
+            <column datatype='real' name='Insurance Duration' ordinal='14' />
+            <column datatype='datetime' name='Policy Start Date' ordinal='15' />
+            <column datatype='string' name='Customer Feedback' ordinal='16' />
+            <column datatype='string' name='Smoking Status' ordinal='17' />
+            <column datatype='string' name='Exercise Frequency' ordinal='18' />
+            <column datatype='string' name='Property Type' ordinal='19' />
+            <column datatype='real' name='Premium Amount' ordinal='20' />
+            <column datatype='real' name='Actual Premium Amount' ordinal='21' />
+            <column datatype='real' name='Predicted Premium Amount' ordinal='22' />
+            <column datatype='real' name='Residual Premium Amount' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Income]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Annual Income</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Dependents</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Number of Dependents]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Number of Dependents</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education Level]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Education Level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Health Score]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Health Score</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Policy Type]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Policy Type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Previous Claims</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Previous Claims]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Previous Claims</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Vehicle Age]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Vehicle Age</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Credit Score]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Credit Score</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurance Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Insurance Duration]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Insurance Duration</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy Start Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Policy Start Date]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Policy Start Date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Feedback</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Feedback]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Customer Feedback</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoking Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Smoking Status]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Smoking Status</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Exercise Frequency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Exercise Frequency]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Exercise Frequency</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Property Type]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Property Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Premium Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Premium Amount]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Premium Amount</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual Premium Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Actual Premium Amount]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Actual Premium Amount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Predicted Premium Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Predicted Premium Amount]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Predicted Premium Amount</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Residual Premium Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Residual Premium Amount]</local-name>
+            <parent-name>[actual_v_preds.csv]</parent-name>
+            <remote-alias>Residual Premium Amount</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Rank Residual Premium Amount' datatype='integer' name='[Calculation_3412813752604598273]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK(SUM([Residual Premium Amount]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='actual_v_preds.csv' datatype='table' name='[__tableau_internal_object_id__].[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/gg/ydyvqhls1lzggjy_z1wmnm0m0000gp/T/tableau-temp/#TableauTemp_0xtdapq02s7kvi1576ppt0xcbihg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/24/2024 06:56:31 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126722</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Annual Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Annual Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Annual Income</remote-alias>
+              <ordinal>3</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27259</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital Status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Dependents</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Number of Dependents]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Dependents</remote-alias>
+              <ordinal>5</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education Level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Occupation</remote-alias>
+              <ordinal>7</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Health Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Health Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Health Score</remote-alias>
+              <ordinal>8</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>113327</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>9</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Policy Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy Type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Previous Claims</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Previous Claims]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Previous Claims</remote-alias>
+              <ordinal>11</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Vehicle Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Age</remote-alias>
+              <ordinal>12</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Credit Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Credit Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Credit Score</remote-alias>
+              <ordinal>13</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1769</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Insurance Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Insurance Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Insurance Duration</remote-alias>
+              <ordinal>14</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy Start Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Policy Start Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy Start Date</remote-alias>
+              <ordinal>15</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>106628</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Feedback</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Feedback]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Feedback</remote-alias>
+              <ordinal>16</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Smoking Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Smoking Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Smoking Status</remote-alias>
+              <ordinal>17</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Exercise Frequency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Exercise Frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Exercise Frequency</remote-alias>
+              <ordinal>18</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Property Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Premium Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Premium Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Premium Amount</remote-alias>
+              <ordinal>20</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8907</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actual Premium Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Actual Premium Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actual Premium Amount</remote-alias>
+              <ordinal>21</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8907</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Predicted Premium Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Predicted Premium Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Predicted Premium Amount</remote-alias>
+              <ordinal>22</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>766</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Residual Premium Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Residual Premium Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Residual Premium Amount</remote-alias>
+              <ordinal>23</ordinal>
+              <family>actual_v_preds.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10787</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='id' />
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Annual Income' />
+        <field-sort-custom-order field='Marital Status' />
+        <field-sort-custom-order field='Number of Dependents' />
+        <field-sort-custom-order field='Education Level' />
+        <field-sort-custom-order field='Occupation' />
+        <field-sort-custom-order field='Health Score' />
+        <field-sort-custom-order field='Location' />
+        <field-sort-custom-order field='Policy Type' />
+        <field-sort-custom-order field='Previous Claims' />
+        <field-sort-custom-order field='Vehicle Age' />
+        <field-sort-custom-order field='Credit Score' />
+        <field-sort-custom-order field='Insurance Duration' />
+        <field-sort-custom-order field='Policy Start Date' />
+        <field-sort-custom-order field='Customer Feedback' />
+        <field-sort-custom-order field='Smoking Status' />
+        <field-sort-custom-order field='Exercise Frequency' />
+        <field-sort-custom-order field='Property Type' />
+        <field-sort-custom-order field='Premium Amount' />
+        <field-sort-custom-order field='Actual Premium Amount' />
+        <field-sort-custom-order field='Predicted Premium Amount' />
+        <field-sort-custom-order field='Calculation_3412813752604598273' />
+        <field-sort-custom-order field='Residual Premium Amount' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='actual_v_preds.csv' id='actual_v_preds.csv_376A814D91CB45B7B7F314AC09608CA0'>
+            <properties context=''>
+              <relation connection='textscan.19tbmvb0kphw6c19pic3t16ee3y2' name='actual_v_preds.csv' table='[actual_v_preds#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='real' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='real' name='Annual Income' ordinal='3' />
+                  <column datatype='string' name='Marital Status' ordinal='4' />
+                  <column datatype='real' name='Number of Dependents' ordinal='5' />
+                  <column datatype='string' name='Education Level' ordinal='6' />
+                  <column datatype='string' name='Occupation' ordinal='7' />
+                  <column datatype='real' name='Health Score' ordinal='8' />
+                  <column datatype='string' name='Location' ordinal='9' />
+                  <column datatype='string' name='Policy Type' ordinal='10' />
+                  <column datatype='real' name='Previous Claims' ordinal='11' />
+                  <column datatype='real' name='Vehicle Age' ordinal='12' />
+                  <column datatype='real' name='Credit Score' ordinal='13' />
+                  <column datatype='real' name='Insurance Duration' ordinal='14' />
+                  <column datatype='datetime' name='Policy Start Date' ordinal='15' />
+                  <column datatype='string' name='Customer Feedback' ordinal='16' />
+                  <column datatype='string' name='Smoking Status' ordinal='17' />
+                  <column datatype='string' name='Exercise Frequency' ordinal='18' />
+                  <column datatype='string' name='Property Type' ordinal='19' />
+                  <column datatype='real' name='Premium Amount' ordinal='20' />
+                  <column datatype='real' name='Actual Premium Amount' ordinal='21' />
+                  <column datatype='real' name='Predicted Premium Amount' ordinal='22' />
+                  <column datatype='real' name='Residual Premium Amount' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 16'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column caption='SQRT Premium Amount' datatype='real' name='[Calculation_1382675482346729491]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SQRT([Premium Amount])' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='SQRT Premium Amount (bin)' datatype='integer' name='[SQRT Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Calculation_1382675482346729491]' peg='0' size='10' />
+            </column>
+            <column-instance column='[Premium Amount]' derivation='Avg' name='[avg:Premium Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[SQRT Premium Amount (bin)]' derivation='None' name='[none:SQRT Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[avg:Premium Amount:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[cnt:id:qk]</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:SQRT Premium Amount (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[LN Premium Amount (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Log Premium Amount (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[SQRT Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{14D70E65-791A-45D9-87B7-E03C5FDDCF53}' />
+    </worksheet>
+    <worksheet name='Sheet 18'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='actual_v_preds' name='federated.0mw7mwz0l767mj1196zsp1lg848u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mw7mwz0l767mj1196zsp1lg848u'>
+            <column datatype='real' name='[Actual Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Rank Residual Premium Amount' datatype='integer' name='[Calculation_3412813752604598273]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK(SUM([Residual Premium Amount]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='real' name='[Predicted Premium Amount]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Residual Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Actual Premium Amount]' derivation='Sum' name='[sum:Actual Premium Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Predicted Premium Amount]' derivation='Sum' name='[sum:Predicted Premium Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Residual Premium Amount]' derivation='Sum' name='[sum:Residual Premium Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_3412813752604598273]' derivation='User' name='[usr:Calculation_3412813752604598273:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mw7mwz0l767mj1196zsp1lg848u].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mw7mwz0l767mj1196zsp1lg848u].[sum:Actual Premium Amount:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mw7mwz0l767mj1196zsp1lg848u].[sum:Predicted Premium Amount:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mw7mwz0l767mj1196zsp1lg848u].[sum:Residual Premium Amount:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0mw7mwz0l767mj1196zsp1lg848u].[usr:Calculation_3412813752604598273:qk:1]' included-values='in-range-or-null'>
+            <min>126700</min>
+            <max>126722</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0mw7mwz0l767mj1196zsp1lg848u].[none:id:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0mw7mwz0l767mj1196zsp1lg848u].[sum:Residual Premium Amount:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0mw7mwz0l767mj1196zsp1lg848u].[:Measure Names]</column>
+            <column>[federated.0mw7mwz0l767mj1196zsp1lg848u].[usr:Calculation_3412813752604598273:qk:1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0mw7mwz0l767mj1196zsp1lg848u].[:Measure Names]' value='74' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0mw7mwz0l767mj1196zsp1lg848u].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mw7mwz0l767mj1196zsp1lg848u].[none:id:ok]</rows>
+        <cols>[federated.0mw7mwz0l767mj1196zsp1lg848u].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{E41BF1B7-FF35-4F66-B55A-B10DC8E60683}' />
+    </worksheet>
+    <worksheet name='age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='25' />
+            </column>
+            <column datatype='real' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='CountD' name='[cum:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:cum:ctd:id:qk:30]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+              <table-calc ordering-field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='0' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='2' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok]' direction='ASC'>
+            <dictionary>
+              <bucket>9</bucket>
+              <bucket>8</bucket>
+              <bucket>7</bucket>
+              <bucket>6</bucket>
+              <bucket>5</bucket>
+              <bucket>4</bucket>
+              <bucket>3</bucket>
+              <bucket>2</bucket>
+              <bucket>1</bucket>
+              <bucket>0</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]' value='p0%' />
+            <format attr='text-format' field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[cum:ctd:id:qk]' value='N' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[cum:ctd:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='0.86756908893585205' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='size' value='0.86756908893585205' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[cum:ctd:id:qk] + [federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30])</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Age (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A7D44981-2463-4150-A2CA-5773D4B1FADB}' />
+    </worksheet>
+    <worksheet name='cdf age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='25' />
+            </column>
+            <column datatype='real' name='[Age]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:cum:ctd:id:qk:30]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+              <table-calc ordering-field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='0' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='1' />
+              <groupfilter function='member' level='[none:Age (bin):ok]' member='2' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' />
+              <text column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Age (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{043C56BB-1B3D-47D8-BF05-47F0729550C6}' />
+    </worksheet>
+    <worksheet name='cdf policy type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Policy Type]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Policy Type]' derivation='None' name='[none:Policy Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:cum:ctd:id:qk:30]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+              <table-calc ordering-field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Policy Type:nk]' />
+              <text column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Age (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A754350C-B248-447C-B205-C2651DE7AAAD}' />
+    </worksheet>
+    <worksheet name='cdf property type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Property Type]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Property Type]' derivation='None' name='[none:Property Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk:22]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Property Type:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk:22]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Property Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk:22]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Property Type:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Age (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{73695FB7-EA18-4F1A-9C3C-0A642B1527DA}' />
+    </worksheet>
+    <worksheet name='cdf smoking status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking Status]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Smoking Status]' derivation='None' name='[none:Smoking Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk:17]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='RowInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk:17]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Smoking Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk:17]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Smoking Status:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Age (bin)]</column>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{56866006-C144-47A2-9402-85BB6AE586F0}' />
+    </worksheet>
+    <worksheet name='corr'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column caption='SQRT Vehicle Age' datatype='real' name='[Calculation_3412813752609398786]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SQRT([Vehicle Age])' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Vehicle Age]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_3412813752609398786]' derivation='Sum' name='[sum:Calculation_3412813752609398786:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Premium Amount]' derivation='Sum' name='[sum:Premium Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <lod column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[sum:Premium Amount:qk]</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[sum:Calculation_3412813752609398786:qk]</cols>
+      </table>
+      <simple-id uuid='{583F2A0C-1DF3-4781-897E-5DC8307FD5FD}' />
+    </worksheet>
+    <worksheet name='occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk:17]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='RowInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%null%</bucket>
+              <bucket>&quot;Unemployed&quot;</bucket>
+              <bucket>&quot;Employed&quot;</bucket>
+              <bucket>&quot;Self-Employed&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk:17]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{BC0E6F94-965E-4A29-985A-E3CB99887E53}' />
+    </worksheet>
+    <worksheet name='occupation (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='CountD' name='[cum:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:cum:ctd:id:qk:30]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+              <table-calc ordering-field='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%null%</bucket>
+              <bucket>&quot;Unemployed&quot;</bucket>
+              <bucket>&quot;Employed&quot;</bucket>
+              <bucket>&quot;Self-Employed&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[cum:ctd:id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[cum:ctd:id:qk] + [federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:cum:ctd:id:qk:30])</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{3C3CDE2F-386B-494F-B38F-85F6A7A513BA}' />
+    </worksheet>
+    <worksheet name='pdf customer feedback'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Customer Feedback]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Customer Feedback]' derivation='None' name='[none:Customer Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Customer Feedback:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%null%</bucket>
+              <bucket>&quot;Poor&quot;</bucket>
+              <bucket>&quot;Average&quot;</bucket>
+              <bucket>&quot;Good&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Customer Feedback:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Customer Feedback:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B232F348-1F72-4891-BDED-00C6A88989A7}' />
+    </worksheet>
+    <worksheet name='pdf education level'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Education Level]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Education Level]' derivation='None' name='[none:Education Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Education Level:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;High School&quot;</bucket>
+              <bucket>&quot;Bachelor&apos;s&quot;</bucket>
+              <bucket>&quot;Master&apos;s&quot;</bucket>
+              <bucket>&quot;PhD&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Education Level:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Education Level:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A0C4B580-9661-477B-BF2B-95DA2B26BFC5}' />
+    </worksheet>
+    <worksheet name='pdf exercise frequency'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Exercise Frequency]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Exercise Frequency]' derivation='None' name='[none:Exercise Frequency:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Exercise Frequency:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Rarely&quot;</bucket>
+              <bucket>&quot;Monthly&quot;</bucket>
+              <bucket>&quot;Weekly&quot;</bucket>
+              <bucket>&quot;Daily&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Exercise Frequency:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Exercise Frequency:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{695A5B5C-9151-4529-8E8D-BF48DC46E426}' />
+    </worksheet>
+    <worksheet name='pdf gender'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Gender:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{CF4C65CD-8B9B-40E0-B41B-3536057D3613}' />
+    </worksheet>
+    <worksheet name='pdf location'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Location]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Location]' derivation='None' name='[none:Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Location:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Location:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0B068977-4611-444E-B0EA-D6144A8690D3}' />
+    </worksheet>
+    <worksheet name='pdf marital status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column datatype='string' name='[Marital Status]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Marital Status]' derivation='None' name='[none:Marital Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Marital Status:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%null%</bucket>
+              <bucket>&quot;Single&quot;</bucket>
+              <bucket>&quot;Married&quot;</bucket>
+              <bucket>&quot;Divorced&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Marital Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Marital Status:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{9C2685DA-9D63-4F0C-89C4-5E5E3F3E91EE}' />
+    </worksheet>
+    <worksheet name='pdf premium amount'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{DEB72D15-83D3-48E2-9C75-C08BD9B4C287}' />
+    </worksheet>
+    <worksheet name='pdf smoking status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='train_sampled' name='federated.02ubkrt1nw8xl11cy7pss112o5ql' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ubkrt1nw8xl11cy7pss112o5ql'>
+            <column aggregation='None' caption='Premium Amount (bin)' datatype='integer' name='[Premium Amount (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='2' formula='[Premium Amount]' peg='0' size='500' />
+            </column>
+            <column datatype='real' name='[Premium Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking Status]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Premium Amount (bin)]' derivation='None' name='[none:Premium Amount (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Smoking Status]' derivation='None' name='[none:Smoking Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Smoking Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[pcto:ctd:id:qk]</rows>
+        <cols>([federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Premium Amount (bin):ok] / [federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Smoking Status:nk])</cols>
+        <show-full-range>
+          <column>[federated.02ubkrt1nw8xl11cy7pss112o5ql].[Premium Amount (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{0BEBBF8C-31C6-4BC8-BE85-A26B2FE1FD56}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='pdf premium amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB9BD026-7964-4D4B-99FC-F01921444412}' />
+    </window>
+    <window class='worksheet' name='pdf smoking status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Smoking Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45FC4D6B-A395-487D-8BE3-CCAE761D6BD5}' />
+    </window>
+    <window class='worksheet' name='pdf customer feedback'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Customer Feedback:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{80FA5C98-0AFD-434A-9A48-B1C32E6818DC}' />
+    </window>
+    <window class='worksheet' name='pdf education level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Education Level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DE8FD5BF-02D1-4EBE-A1D6-5649DA51FC78}' />
+    </window>
+    <window class='worksheet' name='pdf exercise frequency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Exercise Frequency:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6944863E-0C57-4031-ABAA-31027C05AA78}' />
+    </window>
+    <window class='worksheet' name='pdf gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D0B1D73D-C1EF-4E1A-87D2-FBEBA1FE3D27}' />
+    </window>
+    <window class='worksheet' name='pdf location'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Location:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DE8BCDA-EB40-47F3-89E4-9636D08A53AF}' />
+    </window>
+    <window class='worksheet' name='pdf marital status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Marital Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA60445E-F99E-4ECC-BFAF-AD0919871293}' />
+    </window>
+    <window class='worksheet' name='occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{15E3C54A-6753-451D-AABF-DF5E8DAF2F14}' />
+    </window>
+    <window class='worksheet' name='occupation (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E8372CE7-4CC0-4160-95C1-AD2FCD1C0A41}' />
+    </window>
+    <window class='worksheet' name='cdf policy type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Policy Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{177F7784-399B-4575-AACC-5DA85303AFFF}' />
+    </window>
+    <window class='worksheet' name='cdf property type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Property Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0E1CE89-0740-47E8-9B5E-973F6E81029D}' />
+    </window>
+    <window class='worksheet' name='cdf smoking status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Smoking Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1709378F-7D29-4184-8638-FCA447B0DEA3}' />
+    </window>
+    <window class='worksheet' name='age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' type='filter' />
+            <card pane-specification-id='5' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A3C35CB-8D83-4462-A7B9-A3599121467C}' />
+    </window>
+    <window class='worksheet' name='cdf age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' type='filter' />
+            <card pane-specification-id='1' param='[federated.02ubkrt1nw8xl11cy7pss112o5ql].[none:Age (bin):ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D3065EA-47C2-412D-8D05-1744E2FA29CC}' />
+    </window>
+    <window class='worksheet' maximized='true' name='corr'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Credit Score Parameter]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3570B75D-BA78-449E-8D1D-17B1E15ECCB8}' />
+    </window>
+    <window class='worksheet' name='Sheet 16'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D56379DE-1CAB-45E0-9065-F468A250D0AC}' />
+    </window>
+    <window class='worksheet' name='Sheet 18'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0mw7mwz0l767mj1196zsp1lg848u].[usr:Calculation_3412813752604598273:qk:1]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A667B9D7-E86F-4736-AC19-90E1F42D5F34}' />
+    </window>
+  </windows>
+</workbook>
