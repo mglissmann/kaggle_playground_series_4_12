@@ -3,3 +3,7 @@
 ## DATA
 data/*.csv
 data/*.icloud
+data/raw/*
+data/interim/*
+data/processed/*
+data/external/*
